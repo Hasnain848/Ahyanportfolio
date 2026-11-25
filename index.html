@@ -7,63 +7,83 @@
 <meta name="description" content="Ahyan Aslam – Software Engineer, web developer and ERP solutions developer. Websites, ERP systems and e-commerce for businesses.">
 <title>Ahyan Aslam – Software Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600&family=Kaushan+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 <div id="load">AA</div>
 <div class="bar" id="bar"></div>
 <header>
 <a class="logo" href="#home">Ahyan Aslam</a>
-<nav><a href="#projects">Projects</a><a href="#about">About</a><a href="#services">Services</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
-<button class="tog" id="tog" aria-label="Switch light and dark mode"></button>
+<nav><a href="#projects">Portfolio</a><a href="#about">About</a><a href="#services">Services</a><a href="#skills">Expertise</a><a href="#contact">Contact</a><span class="nav-divider"></span><a href="https://github.com/AhyanAslam" target="_blank" rel="noopener" class="nav-social" aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a href="#" id="linkedinNav" target="_blank" rel="noopener" class="nav-social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></nav>
+<div class="theme-switcher" id="themeSwitcher">
+<button class="theme-btn" data-theme="dark" aria-label="Midnight theme" title="Midnight"><i class="fa-solid fa-moon"></i></button>
+<button class="theme-btn" data-theme="light" aria-label="Daylight theme" title="Daylight"><i class="fa-solid fa-sun"></i></button>
+<button class="theme-btn" data-theme="ocean" aria-label="Ocean theme" title="Ocean"><i class="fa-solid fa-water"></i></button>
+<button class="theme-btn" data-theme="ember" aria-label="Ember theme" title="Ember"><i class="fa-solid fa-fire"></i></button>
+</div>
 <button class="burger" id="bg" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </header>
 
 <main id="home">
 <section class="hero">
-<span class="script">Software Engineer</span>
+<span class="subtitle">Software Engineer</span>
 <h1 class="big">AHYAN</h1>
 <img class="cut" src="assets/ahyan-cutout.webp" alt="Ahyan Aslam" width="1100" height="983">
-<p class="side l">Web Developer<br>ERP Solutions Developer</p>
-<p class="side r">E-commerce &amp; Business Automation Builder</p>
-<a class="btn cta" href="#projects">See my work <i>→</i></a>
+<div class="hero-actions cta">
+<a class="btn" href="#projects">View My Work <i>→</i></a>
+<a class="btn btn-resume" href="#" id="resumeBtn" download><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+</div>
 <div class="feat"><small>Featured work</small><b id="ft">Dental Clinic Website</b></div>
 </section>
 
-<section id="projects"><h2>My <span class="acc">Projects</span></h2>
-<p class="lead">Websites, stores and business systems built for real operations. Hover a project (or tap on mobile) for a full preview.</p>
+<section id="projects"><h2>Selected <span class="acc">Projects</span></h2>
+<p class="lead">A selection of websites, stores, and enterprise systems developed for real-world operations. Hover over a project (or tap on mobile) to explore the details.</p>
 <div class="pgrid" id="pg"></div></section>
 
 <section id="about" class="about">
 <div>
 <p class="hi">Hi, I am</p>
 <h2 class="name">Ahyan Aslam</h2>
-<p class="lead">I build modern websites, ERP systems and e-commerce stores that solve real business problems. I help businesses get online, run their operations more smoothly and give customers a better experience.</p>
-<ul class="lead"><li>Business websites for clinics, startups and brands</li><li>Custom ERP and management systems</li><li>Online stores and Shopify development</li><li>Automation of repetitive business tasks</li></ul>
-<a class="btn" href="#contact">Let’s talk <i>→</i></a>
+<p class="lead">I specialise in building modern websites, enterprise resource planning systems, and e-commerce solutions that address real business challenges. My focus is on helping organisations establish a strong online presence, streamline their operations, and deliver exceptional customer experiences.</p>
+<ul class="lead"><li>Professional websites for clinics, startups, and brands</li><li>Custom ERP and management systems</li><li>Online stores and Shopify development</li><li>Automation of repetitive business processes</li></ul>
+<a class="btn" href="#contact">Let’s Connect <i>→</i></a>
 </div>
 <div class="abg"><img class="cut2" alt="Ahyan Aslam portrait" width="1100" height="983"></div>
 </section>
 
 <section id="services">
-<h2>What I <span class="acc">Build</span></h2>
+<h2>What I <span class="acc">Deliver</span></h2>
 <div class="sv">
 <div><h3>Websites</h3><ul><li>Business and clinic websites</li><li>Responsive, SEO-friendly</li><li>Modern UI/UX and animation</li></ul></div>
 <div><h3>Custom ERP</h3><ul><li>Inventory, sales and purchases</li><li>Employees and accounting modules</li><li>Reporting and analytics</li></ul></div>
 <div><h3>E-commerce</h3><ul><li>Online stores and carts</li><li>Checkout and payments</li><li>Product management</li></ul></div>
 <div><h3>Shopify</h3><ul><li>Store setup and customisation</li><li>Product pages and collections</li><li>Conversion-focused design</li></ul></div>
-<div><h3>Automation</h3><ul><li>Digitising workflows</li><li>Custom internal tools</li><li>Less manual work</li></ul></div>
+<div><h3>Automation</h3><ul><li>Streamlining digital workflows</li><li>Custom internal tools</li><li>Reduced manual overhead</li></ul></div>
 </div>
 </section>
 
-<section id="skills"><h2>My <span class="acc">Skills</span></h2><p class="lead">What I work with to take a business idea from first sketch to a working product.</p><div class="skg"><div class="skc"><span class="ic">&lt;/&gt;</span><h3>Frontend Development</h3><p>Responsive, fast interfaces for websites and stores.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React.js</span><span>Next.js</span><span>Tailwind CSS</span></div></div><div class="skc"><span class="ic">{ }</span><h3>Backend Development</h3><p>Server logic and APIs behind your system.</p><div class="chips"><span>Java</span><span>Spring Boot</span><span>Node.js</span><span>Express.js</span><span>Python</span><span>PHP</span></div></div><div class="skc"><span class="ic">DB</span><h3>Database Management</h3><p>Storing and organising business data.</p><div class="chips"><span>MySQL</span><span>MongoDB</span><span>PostgreSQL</span><span>Supabase</span></div></div><div class="skc"><span class="ic">OOP</span><h3>Software Development</h3><p>Core engineering foundations.</p><div class="chips"><span>Object-Oriented Programming</span><span>Data Structures</span><span>Database Management Systems</span><span>Full-stack development</span><span>API integration</span><span>Software architecture fundamentals</span></div></div><div class="skc"><span class="ic">Git</span><h3>Tools &amp; Platforms</h3><p>Where design, code and stores come together.</p><div class="chips"><span>Shopify</span><span>Git &amp; GitHub</span><span>Figma</span><span>REST APIs</span><span>VS Code</span><span>IntelliJ IDEA</span></div></div></div></section>
+<section id="skills"><h2>Technical <span class="acc">Expertise</span></h2><p class="lead">The technologies and tools I leverage to transform business concepts into fully realised solutions.</p><div class="skg"><div class="skc"><span class="ic">&lt;/&gt;</span><h3>Frontend Development</h3><p>High-performance, responsive interfaces for web applications and storefronts.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React.js</span><span>Next.js</span><span>Tailwind CSS</span></div></div><div class="skc"><span class="ic">{ }</span><h3>Backend Development</h3><p>Robust server-side logic and API architecture.</p><div class="chips"><span>Java</span><span>Spring Boot</span><span>Node.js</span><span>Express.js</span><span>Python</span><span>PHP</span></div></div><div class="skc"><span class="ic">DB</span><h3>Database Management</h3><p>Secure storage and structured management of business data.</p><div class="chips"><span>MySQL</span><span>MongoDB</span><span>PostgreSQL</span><span>Supabase</span></div></div><div class="skc"><span class="ic">OOP</span><h3>Software Development</h3><p>Core engineering foundations.</p><div class="chips"><span>Object-Oriented Programming</span><span>Data Structures</span><span>Database Management Systems</span><span>Full-stack development</span><span>API integration</span><span>Software architecture fundamentals</span></div></div><div class="skc"><span class="ic">Git</span><h3>Tools &amp; Platforms</h3><p>Where design, development, and deployment converge.</p><div class="chips"><span>Shopify</span><span>Git &amp; GitHub</span><span>Figma</span><span>REST APIs</span><span>VS Code</span><span>IntelliJ IDEA</span></div></div></div></section>
 
-<section id="process"><h2>How I <span class="acc">Work</span></h2><div class="stp"><div class="st"><span class="n">1</span><h3>Discovery</h3><p>Understanding the client’s business and requirements.</p></div><div class="st"><span class="n">2</span><h3>Planning</h3><p>Designing the structure and project roadmap.</p></div><div class="st"><span class="n">3</span><h3>Development</h3><p>Building and testing the solution.</p></div><div class="st"><span class="n">4</span><h3>Delivery</h3><p>Launching the project and providing support.</p></div></div></section>
+<section id="process"><h2>My <span class="acc">Process</span></h2><div class="stp"><div class="st"><span class="n">1</span><h3>Discovery</h3><p>Understanding the client’s business and requirements.</p></div><div class="st"><span class="n">2</span><h3>Planning</h3><p>Designing the structure and project roadmap.</p></div><div class="st"><span class="n">3</span><h3>Development</h3><p>Building and testing the solution.</p></div><div class="st"><span class="n">4</span><h3>Delivery</h3><p>Launching the project and providing support.</p></div></div></section>
 
-<section id="contact" class="ct2"><div><h2>Have a Project in Mind? <span class="acc">Let’s Build Something Great.</span></h2><p class="lead">I’m available for website development, ERP systems and e-commerce projects. Tell me what you need and I’ll reply with a clear plan and next steps.</p><p class="lead"><a class="ml" href="mailto:m.ahyan315@gmail.com">m.ahyan315@gmail.com</a></p></div><a class="btn mail" target="_blank" rel="noopener" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=m.ahyan315@gmail.com"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Send Email <i>→</i></a></section>
+<section id="contact" class="ct2"><div><h2>Have a Project in Mind? <span class="acc">Let’s Collaborate.</span></h2><p class="lead">I am available for website development, ERP system implementations, and e-commerce projects. Share your requirements, and I will respond with a comprehensive plan and actionable next steps.</p><p class="lead"><a class="ml" href="mailto:m.ahyan315@gmail.com">m.ahyan315@gmail.com</a></p>
+<div class="contact-socials">
+<a href="https://github.com/AhyanAslam" target="_blank" rel="noopener" class="btn btn-social github"><i class="fa-brands fa-github"></i> GitHub</a>
+<a href="#" id="linkedinContact" target="_blank" rel="noopener" class="btn btn-social linkedin"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+</div>
+</div><a class="btn mail" target="_blank" rel="noopener" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=m.ahyan315@gmail.com"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Send Email <i>→</i></a></section>
 </main><div class="pvb" id="pvb"></div><div class="pv" id="pv" role="dialog" aria-label="Project preview"></div>
-<footer>© 2026 Ahyan Aslam · <a class="ml" href="mailto:m.ahyan315@gmail.com">m.ahyan315@gmail.com</a></footer>
+<footer>
+<div class="footer-content">
+<p>© 2026 Ahyan Aslam · <a class="ml" href="mailto:m.ahyan315@gmail.com">m.ahyan315@gmail.com</a></p>
+<div class="footer-socials">
+<a href="https://github.com/AhyanAslam" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+<a href="#" id="linkedinFooter" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+</div>
+</div>
+</footer>
 
 
 <script src="js/main.js"></script>
