@@ -77,8 +77,34 @@ var bg=document.getElementById("bg"),nv=document.querySelector("header nav");
 bg.addEventListener("click",function(){var o=nv.classList.toggle("open");bg.setAttribute("aria-expanded",o);bg.setAttribute("aria-label",o?"Close menu":"Open menu")});
 nv.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){nv.classList.remove("open");bg.setAttribute("aria-expanded","false")})});
 addEventListener("resize",function(){if(innerWidth>800){nv.classList.remove("open");bg.setAttribute("aria-expanded","false")}});
-var r=document.documentElement,tg=document.getElementById("tog");
-tg.addEventListener("click",function(){r.setAttribute("data-theme",r.getAttribute("data-theme")!=="light"?"light":"dark")});
-r.setAttribute("data-theme","dark");
+
+/* ============================================
+   THEME SWITCHER — 3 interchangeable themes
+   ============================================ */
+(function(){
+  var r=document.documentElement;
+  var themes=["dark","light","ocean","ember"];
+  var saved=localStorage.getItem("portfolio-theme");
+  var current=(saved && themes.indexOf(saved)!==-1)?saved:"dark";
+  r.setAttribute("data-theme",current);
+
+  var btns=document.querySelectorAll(".theme-btn");
+  function setActive(){
+    btns.forEach(function(b){
+      b.classList.toggle("active",b.getAttribute("data-theme")===current);
+    });
+  }
+  setActive();
+
+  btns.forEach(function(btn){
+    btn.addEventListener("click",function(){
+      current=btn.getAttribute("data-theme");
+      r.setAttribute("data-theme",current);
+      localStorage.setItem("portfolio-theme",current);
+      setActive();
+    });
+  });
+})();
+
 addEventListener("scroll",function(){var h=document.documentElement;document.getElementById("bar").style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+"%"},{passive:true});
 addEventListener("load",function(){setTimeout(function(){document.getElementById("load").classList.add("off")},500)});
